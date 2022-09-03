@@ -1,1 +1,3 @@
-# html_css_js_projects
+# HTML, CSS and Javascript
+* Project 1 - Digital Clock
+* Project 2 - My personal portfolio website
