@@ -17,6 +17,6 @@ updateCounter();
 
 //for word count
 function getWordCount() {
-    totalEl.innerHTML = textEl.value.split(' ').filter(function(n) { return n != '' }).length;
-    remainingEl.innerHTML = textEl.getAttribute("maxLength") - textEl.value.split(' ').length;
+    totalEl.innerHTML = textEl.value.trim().split(/\s+/).length;
+    remainingEl.innerHTML = textEl.getAttribute("maxLength") - textEl.value.trim().split(/\s+/).length;
 }
