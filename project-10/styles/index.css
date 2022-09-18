@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-image: url("https://images.pexels.com/photos/2397414/pexels-photo-2397414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: filter 0.7s;
+  filter: blur(0);
+}
+.main-container.active {
+  filter: blur(5px) brightness(0.7);
+}
+.main-container h1 {
+  color: white;
+  font-size: 3rem;
+}
+.main-container .btn {
+  background-color: crimson;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.show-background {
+  position: fixed;
+  left: 50%;
+  width: 400px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  background-color: crimson;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  visibility: hidden;
+  opacity: 0;
+  top: 30%;
+  transition: all 0.7s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.show-background.active {
+  visibility: visible;
+  opacity: 1;
+  top: 50%;
+}
+.show-background .btn-go {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: crimson;
+  border: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.show-background .btn-go:hover {
+  color: white;
+  background-color: crimson;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.show-background h1 {
+  margin: 1rem 5px;
+}
+.show-background label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.show-background input {
+  height: 40px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  color: crimson;
+  font-family: cursive;
+  border: 2px solid white;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .show-background {
+    width: 90%;
+  }
+}/*# sourceMappingURL=index.css.map */
